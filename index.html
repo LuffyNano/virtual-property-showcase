@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Property Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏠 Virtual Property Showcase</h1>
+    <p>Browse available properties with photos, prices, and details</p>
+  </header>
+
+  <section class="filter">
+    <label for="filter">Filter by Type:</label>
+    <select id="filter" onchange="filterProperties()">
+      <option value="all">All</option>
+      <option value="apartment">Apartment</option>
+      <option value="villa">Villa</option>
+      <option value="office">Office</option>
+    </select>
+  </section>
+
+  <section id="properties" class="property-list">
+    <!-- Properties will load here dynamically -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
